@@ -103,7 +103,9 @@ const app = Vue.createApp({
             pokemonCopy.guid = this.getGUID();
             this.filteredPokemon.push(pokemonCopy);
           }
-          
+
+
+        
         }
       })
     },
