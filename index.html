@@ -68,12 +68,14 @@
 
 
       <div v-if = "filteredPokemon.length > 0" id = "filter">
-        <h2>Filtered Pokemon</h2>
+        <h2>Search Results</h2>
         <div id = "filtered-pokemon">
           <div 
           class = "pokemon"
           v-for = "pokemon in filteredPokemon"
-          @click = "addPokemonToParty(pokemon)">
+          @click = "addPokemonToParty(pokemon)"
+          @click = "clearPokemon()">
+          
           
             <div class = "img-container">
               <img
@@ -118,9 +120,7 @@
         </div>
 
       
-      <footer class = "fixed-bottom">
-        <p>&copy; 2021</p>
-      </footer>
+
     </div>
 
     <script
@@ -132,5 +132,13 @@
     <script src="https://unpkg.com/vue@next"></script>
 
     <script src="app.js"></script>
+
+    <footer class = "fixed-bottom" >
+      <p>&copy; 2021</p>
+    </footer>
+
   </body>
+
+
+
 </html>

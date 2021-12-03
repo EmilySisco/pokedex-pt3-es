@@ -6,22 +6,21 @@
   box-sizing: border-box;
 }
 
-
 body {
   background: linear-gradient(to right, #EE1515, #fff, #222224);
   font-family: 'Oswald','Lato', sans-serif;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0;
   min-height: 400px;
   clear: both;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+
 }
 
 #party {
   background-color:rgb(36,36,36);
-  top: 50px;
   min-height: 30vh;
   width: 100%;
   overflow-x: auto;
@@ -30,7 +29,6 @@ body {
 }
 .party-area {
   margin-top: 100px;
-  color:black;
   font-family: 'Oswald','Lato', sans-serif;
 }
 
@@ -45,20 +43,29 @@ body {
 #party-pokemon {
   display: flex;
   flex-direction: row;
+}
+#filtered-pokemon {
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
-
+h2 {
+  font-family: 'Oswald','Lato', sans-serif;
+  text-align: center;
+}
 #all {
-  margin-top: 50px;
+  margin-top: 70px;
+  margin-bottom: 50px;
 }
 
 #all-pokemon {
   /*overflow: scroll;*/
-  height: 50vh;
+  height: 60vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 
 }
 
@@ -67,8 +74,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 20%;
-    background-color: #eee;
+    flex-basis: 15%;
+    background-color: rgb(219,215,210);
     border-radius: 10px;
     box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
     margin: 10px;
@@ -77,6 +84,8 @@ body {
     transform: scale(1.0);
     transition: all 0.2s;
     cursor: pointer;
+    font-family: 'Oswald','Lato', sans-serif;
+    
   }
   
   .pokemon:hover {
@@ -100,6 +109,7 @@ body {
   
   .pokemon .info {
     margin-top: 20px;
+    font-family: 'Oswald','Lato', sans-serif;
   }
   
   .pokemon .info .number {
@@ -107,6 +117,7 @@ body {
     padding: 5px 10px;
     border-radius: 10px;
     font-size: 0.8em;
+    font-family: 'Oswald','Lato', sans-serif;
   }
   
   .pokemon .info .name {
@@ -120,6 +131,7 @@ body {
     font-size: 0.7em;
     text-transform: capitalize;
     font-weight: 200;
+    font-family: 'Oswald','Lato', sans-serif;
   }
 
   footer {
@@ -127,12 +139,12 @@ body {
     padding: 1rem;
     background-color: rgb(36,36,36);
     color: white;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
+    margin-top: 50px;
 
   }
 
   footer p {
     margin: auto;
+    text-align: center;
+    font-family: 'Oswald','Lato', sans-serif;
   }
